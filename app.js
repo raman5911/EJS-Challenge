@@ -27,7 +27,9 @@ app.get("/about", function(req, res) {
   res.render("about", {aboutText: aboutContent});
 });
 
-
+app.get("/compose", function(req, res) {
+  res.render("compose");
+});
 
 
 
