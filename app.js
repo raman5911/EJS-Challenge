@@ -20,8 +20,7 @@ let allPosts = [];
 
 
 app.get("/", function(req, res) {
-  res.render("home", {homeText: homeStartingContent});
-  console.log(allPosts);
+  res.render("home", {homeText: homeStartingContent, allposts: allPosts});
 });
 
 app.get("/contact", function(req, res) {
